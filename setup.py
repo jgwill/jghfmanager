@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='jghfmanager',
-    version='0.1.0',
+    version='0.1.1',
     author='J.Guillaume D-Isabelle',
     description='A Python module jghfmanager',
     url='https://github.com/jgwill/jghfmanager',
