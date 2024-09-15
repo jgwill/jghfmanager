@@ -22,8 +22,11 @@ class JgHfMusicalPieces:
         out_str=""
         piece=self.musical
         name=piece['name']
-        iterations=piece['iterations']
+        sname=piece['sname']
+        prompts=piece['prompts']
         out_str+=f"Musical Piece: {name}\n"
-        for k,v in iterations.items():
-            out_str+=f"  {k}: {v}\n"
+        out_str+=f"  Seq Name: {sname}\n"
+        out_str+="  Prompts:\n"
+        for k,v in prompts.items():
+            out_str+=f"    {k}: {v}\n"
         return out_str
