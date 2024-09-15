@@ -31,12 +31,11 @@ _api_key_name="HUGGINGFACE_API_KEY"
 token = os.getenv(_api_key_name)
 
 # Step 4: Start the specified inference endpoint
-name='chatmusician-jgwill'
-namespace='jgwill'
-repository='m-a-p/ChatMusician'
+name=config.huggingface['name']
+namespace=config.huggingface['namespace']
+repository=config.huggingface['repository']
 
 
-exit()
 
 endpoint:InferenceEndpoint=api.get_inference_endpoint(name=name,namespace=namespace,token=token)
 print(endpoint)
