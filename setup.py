@@ -15,7 +15,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            "ohfi = jghfmanager.jgthfcli:main",
+            "jghfinference = jghfmanager.jgthfcli:main",
         ]
     },
 )
