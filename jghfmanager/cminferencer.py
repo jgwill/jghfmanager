@@ -15,10 +15,11 @@ sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 from jgthfdata import JgHfConfig, JgHfMusicalPieces
 
 config_filename="orpheus-config.yaml"
-musical_pieces_filename="musical.yaml"
+
+
 config=JgHfConfig(config_filename)
 print(config.huggingface)
-musical_pieces=JgHfMusicalPieces(musical_pieces_filename)
+
 
 # Step 2: Import necessary modules
 from huggingface_hub import HfApi
