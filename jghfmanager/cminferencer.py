@@ -28,6 +28,9 @@ from huggingface_hub import InferenceEndpoint
 # Step 3: Authenticate using your HuggingFace token
 api = HfApi()
 _api_key_name="HUGGINGFACE_API_KEY"
+
+if 'token_env_var' in config.huggingface:
+  _api_key_name=config.huggingface['token_env_var']
 token = os.getenv(_api_key_name)
 
 # Step 4: Start the specified inference endpoint
