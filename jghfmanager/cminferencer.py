@@ -39,6 +39,11 @@ repository=config.huggingface['repository']
 
 endpoint:InferenceEndpoint=api.get_inference_endpoint(name=name,namespace=namespace,token=token)
 print(endpoint)
+
+
+musical_pieces_filename="musical.yaml"
+musical_pieces=JgHfMusicalPieces(musical_pieces_filename)
+print(musical_pieces)
 endpoint.resume()
 endpoint:InferenceEndpoint=api.get_inference_endpoint(name=name,namespace=namespace,token=token)
 print(endpoint)
