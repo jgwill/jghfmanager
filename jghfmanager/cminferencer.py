@@ -14,7 +14,7 @@ sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
 from jgthfdata import JgHfConfig, JgHfMusicalPieces
 
-config_filename="orpheus-config.yaml"
+config_filename="orpheus-config.yml"
 
 
 config=JgHfConfig(config_filename)
@@ -44,7 +44,7 @@ endpoint:InferenceEndpoint=api.get_inference_endpoint(name=name,namespace=namesp
 print(endpoint)
 
 
-musical_pieces_filename="musical.yaml"
+musical_pieces_filename="musical.yml"
 musical_pieces=JgHfMusicalPieces(musical_pieces_filename)
 print(musical_pieces)
 endpoint.resume()
