@@ -16,6 +16,7 @@ setup(
     entry_points={
         'console_scripts': [
             "jghfinference = jghfmanager.jgthfcli:main",
+            "jghfpause = jghfmanager.ensure_endpoint_paused:main",
         ]
     },
 )
