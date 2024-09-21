@@ -1,0 +1,5 @@
+huggingface:
+  name: chatmusician-myendpoint
+  namespace: myusername
+  repository: m-a-p/ChatMusician
+  token_env_var: HUGGINGFACE_API_KEY

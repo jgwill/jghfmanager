@@ -1,18 +1,18 @@
 musical:
-  name: Viva
+  name: MyCreation
   sname: 21b
   prompts:
-    i1: "Develop a musical piece named Viva using the given chord progression. 'Am', 'Bm', 'Em', 'Bm', 'C', 'D', 'G'"
-    i2: "Develop a musical piece named Viva using the given chord progression. 'Am', 'F#', 'Bm', 'Em', 'Am', 'F#', 'D', 'G'"
-    i2b: "Craft a musical works named Viva that follow the given chord alternations. 'Am', 'F#', 'Bm', 'Em', 'Am', 'F#', 'D', 'G'"
-    i2c: "Craft a musical works that follow the given chord. 'Am', 'Bm', 'Em', 'Bm', 'C'"
-    i3: "Craft a musical works named Viva that follow the given chord alternations. 'Am', 'F#', 'Bm', 'Em', 'Am', 'F#', 'D', 'G'"
-    i4: "Develop a basic chord alternation pattern that follow the given chord alternations 'Am', 'Bm', 'Em', 'Bm', 'C', 'D', 'G'"
-    i4b: "Develop a basic chord progression and resolution pattern that follow the given chord 'Am', 'Bm', 'Em', 'Bm', 'C', 'D', 'G'"
-    i4c: "Develop a basic chord progression and resolution pattern that follow the given chord 'Bm', 'Am', 'F#', 'Bm', 'Em'"
-    i4c2: "Develop a basic chord progression and resolution pattern that follow the given chord 'Bm', 'Am', 'F#', 'Bm', 'Em'"
-    i4c3: "Develop a basic chord progression and resolution pattern that follow the given chord 'Am' 'F#' 'Bm' 'Em'"
-    i5: "Develop a basic chord progression pattern that follow the given chord 'Am', 'Bm', 'Em', 'Bm', 'C', 'D', 'G'"
-    i6: "Develop a basic chord progression pattern that follow the given chord 'Am', 'F#', 'Bm', 'Em', 'Am', 'F#', 'D', 'G'"
-    i7: "Develop a basic chord progression and resolution pattern that follow the given chord 'Am', 'F#', 'Bm', 'Em', 'Am', 'F#', 'D', 'G'"
-    i8: "Develop a musical work based on 'Am', 'Bm', 'Em', 'Bm', 'C', 'D', 'G', 'Am', 'F#', 'Bm', 'Em', 'Am', 'F#', 'D', 'G'"
+    i1: "Develop a musical piece named MyCreation using the given chord progression. 'A', 'Bm', 'E', 'Bm', 'C', 'D', 'G'"
+    i2: "Develop a musical piece named MyCreation using the given chord progression. 'A', 'F#', 'Bm', 'E', 'A', 'F#', 'D', 'G'"
+    i2b: "Craft a musical works named MyCreation that follow the given chord alternations. 'A', 'F#', 'Bm', 'E', 'A', 'F#', 'D', 'G'"
+    i2c: "Craft a musical works that follow the given chord. 'A', 'Bm', 'E', 'Bm', 'C'"
+    i3: "Craft a musical works named MyCreation that follow the given chord alternations. 'A', 'F#', 'Bm', 'E', 'A', 'F#', 'D', 'G'"
+    i4: "Develop a basic chord alternation pattern that follow the given chord alternations 'A', 'Bm', 'E', 'Bm', 'C', 'D', 'G'"
+    i4b: "Develop a basic chord progression and resolution pattern that follow the given chord 'A', 'Bm', 'E', 'Bm', 'C', 'D', 'G'"
+    i4c: "Develop a basic chord progression and resolution pattern that follow the given chord 'Bm', 'A', 'F#', 'Bm', 'E'"
+    i4c2: "Develop a basic chord progression and resolution pattern that follow the given chord 'Bm', 'A', 'F#', 'Bm', 'E'"
+    i4c3: "Develop a basic chord progression and resolution pattern that follow the given chord 'A' 'F#' 'Bm' 'E'"
+    i5: "Develop a basic chord progression pattern that follow the given chord 'A', 'Bm', 'E', 'Bm', 'C', 'D', 'G'"
+    i6: "Develop a basic chord progression pattern that follow the given chord 'A', 'F#', 'Bm', 'E', 'A', 'F#', 'D', 'G'"
+    i7: "Develop a basic chord progression and resolution pattern that follow the given chord 'A', 'F#', 'Bm', 'E', 'A', 'F#', 'D', 'G'"
+    i8: "Develop a musical work based on 'A', 'Bm', 'E', 'Bm', 'C', 'D', 'G', 'A', 'F#', 'Bm', 'E', 'A', 'F#', 'D', 'G'"
