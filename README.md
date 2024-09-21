@@ -1,7 +1,11 @@
 # jghfmanager
 HuggingFace EndPoint Manager - Ex. Boot a ChatMusician Endpoint, send some requests then suspend it.
 
-1. Inferencer booting and executing the HuggingFace Endpoint described in the 'orpheus-config.yml'
+## Prototype
+
+### 1. Inferencer booting and executing the HuggingFace Endpoint described in the 'orpheus-config.yml'
+
+#### Install and run
 
 ```sh
 pip install -U jghfmanager orpheuspypractice
@@ -13,7 +17,11 @@ ohfi
 ```
 
 
-## Config
+### Config
+
+**orpheus-config.yml**
+
+* in current folder or in your home folder
 
 ```yml
 huggingface:
@@ -23,7 +31,12 @@ huggingface:
   token_env_var: HUGGINGFACE_API_KEY
 ```
 
-## Musical Inference request
+### Musical Inference request
+
+**musical.yml**
+
+* in current folder where is your creation.
+* You can try a bot to help build your prompt (that you will need to convert into YAML): [Poe/jgwill/cmPengHelperAlpha](https://poe.com/cmPengHelperAlpha)
 
 ```yml
 musical:
