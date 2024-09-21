@@ -37,7 +37,7 @@ huggingface:
 
 * in current folder where is your creation.
 * You can try a bot to help build your prompt (that you will need to convert into YAML): [Poe/jgwill/cmPengHelperAlpha](https://poe.com/cmPengHelperAlpha)
-
+* For the more advanced user, you can view an engineered prompt in langsmith hub [jgwill/cmpenghelperbeta](https://smith.langchain.com/hub/jgwill/cmpenghelperbeta)
 ```yml
 musical:
   name: mycreationname
@@ -45,5 +45,22 @@ musical:
   prompts:
     prompt1: "the prompt text...."
     prompt2: "another prompt or a variation...."
+```
+
+#### Python use for LangSmith Hub Prompt jgwill/cmpenghelperbeta
+
+##### install
+
+```sh
+pip install -U langchainhub
+```
+
+```python
+
+from langchain import hub
+tool_hub_tag="jgwill/cmpenghelperbeta"
+prompt_template = hub.pull(tool_hub_tag)
+
+
 ```
 
