@@ -4,11 +4,10 @@
 
 import json
 import os
+import sys
+import argparse
 
 import jgcmlib as jcm
-
-import sys
-import os
 
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
@@ -16,18 +15,28 @@ from jgthfdata import JgHfConfig, JgHfMusicalPieces
 
 
 def main():
-  config_filename="orpheus-config.yml"
+  parser = argparse.ArgumentParser(description='OHFI - Orpheus HuggingFace Inference tool')
+  parser.add_argument('--config', default='orpheus-config.yml', help='Configuration file path')
+  parser.add_argument('--musical', default='musical.yml', help='Musical pieces file path')
+  parser.add_argument('--help', action='store_true', help='Show this help message and exit')
+  
+  args, unknown = parser.parse_known_args()
+  
+  if args.help or '--help' in sys.argv:
+    parser.print_help()
+    return
+
+  config_filename = args.config
   #if not found try read from $HOME
   if not os.path.exists(config_filename):
     config_filename=os.path.join(os.getenv("HOME"),config_filename)
     if not os.path.exists(config_filename):
       print(f"Error: {config_filename} not found")
-      exit()
-
+      print("Please create a configuration file or specify one with --config")
+      return
 
   config=JgHfConfig(config_filename)
   #print(config.huggingface)
-
 
   # Step 2: Import necessary modules
   from huggingface_hub import HfApi
@@ -46,13 +55,15 @@ def main():
   namespace=config.huggingface['namespace']
   repository=config.huggingface['repository']
 
-
-
   endpoint:InferenceEndpoint=api.get_inference_endpoint(name=name,namespace=namespace,token=token)
   #print(endpoint)
 
-
-  musical_pieces_filename="musical.yml"
+  musical_pieces_filename = args.musical
+  if not os.path.exists(musical_pieces_filename):
+    print(f"Error: {musical_pieces_filename} not found")
+    print("Please create a musical pieces file or specify one with --musical")
+    return
+    
   musical_pieces=JgHfMusicalPieces(musical_pieces_filename)
   print(musical_pieces)
 
