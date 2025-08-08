@@ -18,11 +18,10 @@ def main():
   parser = argparse.ArgumentParser(description='OHFI - Orpheus HuggingFace Inference tool')
   parser.add_argument('--config', default='orpheus-config.yml', help='Configuration file path')
   parser.add_argument('--musical', default='musical.yml', help='Musical pieces file path')
-  parser.add_argument('--help', action='store_true', help='Show this help message and exit')
   
   args, unknown = parser.parse_known_args()
   
-  if args.help or '--help' in sys.argv:
+  if '--help' in sys.argv or '-h' in sys.argv:
     parser.print_help()
     return
 
